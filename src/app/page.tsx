@@ -43,7 +43,7 @@ export default function Home() {
     <div className="items-center block h-auto">
       <main className="w-full justify-items-center">
         <nav
-          className={`navbar w-full pl-6 pr-6 pt-4 pb-4 fixed grid grid-cols-2 transition-colors duration-300 ${
+          className={`navbar w-full md:pl-6 md:pr-6 md:pt-4 md:pb-4 pl-4 pr-4 pt-2 pb-2  fixed grid grid-cols-2 transition-colors duration-300 ${
             scrolled ? "bg-black" : "bg-transparent"
           }`}
         >
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <div id="home" className="section-head w-full max-w-4xl pl-6 pr-6 pt-40 pb-40 block text-center  justify-items-center">
+        <div id="home" className="section-head w-full max-w-4xl md:pl-6 md:pr-6 md:pt-40 md:pb-40 pl-4 pr-4 pt-30 pb-20 block text-center  justify-items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -83,9 +83,9 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{delay: .5, duration: 0.2, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            className="text-center  justify-items-center"
+            className="text-center  justify-items-center sm:w-auto w-full"
           >
-            <a href="#contact" className="button">Get Free Access</a>
+            <a href="#contact" className="button w-full">Get Free Access</a>
           </motion.div>
           
           <div className="lines">
@@ -96,7 +96,7 @@ export default function Home() {
         </div>
         
 
-        <div id="solution" className="section section-solution w-full pl-6 pr-6 pt-60 pb-40 block justify-items-center text-center">
+        <div id="solution" className="section section-solution w-full md:pl-6 md:pr-6 md:pt-40 md:pb-40 pl-4 pr-4 pt-30 pb-20 block justify-items-center text-center">
           <div className="max-w-2xl ">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -112,8 +112,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="features" className="section section-features w-full pl-6 pr-6 pt-30 pb-30 block justify-items-center">
-          <div className="max-w-6xl text-align-left w-full mb-10">
+        <div id="features" className="section section-features w-full md:pl-6 md:pr-6 md:pt-30 md:pb-30 pl-4 pr-4 pt-20 pb-20 block justify-items-center">
+          <div className="max-w-6xl text-align-left w-full md:mb-10 mb-4">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -126,7 +126,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-8 max-w-6xl">
+          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-6xl">
             
             <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -186,7 +186,7 @@ export default function Home() {
 
 
 
-          <div className="max-w-6xl text-align-left w-full mb-10 mt-50">
+          <div className="max-w-6xl text-align-left w-full md:mb-10 md:mt-50 mb-4 mt-20">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -199,7 +199,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-8 max-w-6xl">
+          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-6xl w-full">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -258,7 +258,7 @@ export default function Home() {
 
 
 
-          <div className="max-w-6xl text-align-left w-full mb-10 mt-50">
+          <div className="max-w-6xl text-align-left  w-full md:mb-10 md:mt-50 mb-4 mt-20">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -271,7 +271,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-8 max-w-6xl">
+          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-6xl w-full">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -331,8 +331,8 @@ export default function Home() {
 
 
 
-      <div id="about" className="section section-about w-full pl-6 pr-6 pt-30 pb-40 block justify-items-center">
-        <div className="max-w-6xl text-align-left w-full mb-10">
+      <div id="about" className="section section-about w-full md:pl-6 md:pr-6 md:pt-40 md:pb-40 pl-4 pr-4 pt-10 pb-20 block justify-items-center">
+        <div className="max-w-6xl text-align-left w-full md:mb-10 mb-4">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -375,7 +375,7 @@ export default function Home() {
 
 
 
-      <div id="contact" className="section section-contact w-full pl-6 pr-6 pt-40 pb-40 block justify-items-center">
+      <div id="contact" className="section section-contact w-full md:pl-6 md:pr-6 md:pt-40 md:pb-40 pl-4 pr-4 pt-20 pb-10 block justify-items-center">
         <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -389,7 +389,7 @@ export default function Home() {
               <p className="body">Work smarter, sell faster, and grow stronger with AI-powered cannabis insights. Paper Planes turns your data into action.</p>
           </div>
 
-          <div className="pt-10 pb-10">
+          <div className="md:pt-10 md:pb-10 pt-2 pb-2">
             <ContactForm />
           </div>
         </div>
@@ -398,7 +398,7 @@ export default function Home() {
       </div>
 
       </main>
-      <footer className="text-center mb-10 mt-10">
+      <footer className="text-center md:mb-10 md:mt-10 mb-5 mt-5 pl-2 pr-2">
         <p className="body-xs opacity-75">Copyright © 2025 Paper Planes Tech Inc | All Rights Reserved</p>
       </footer>
     </div>

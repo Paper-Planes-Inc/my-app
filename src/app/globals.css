@@ -77,8 +77,8 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 2.25rem;
+  line-height: 3.25rem;
   font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
   font-weight:700;
 }
@@ -163,7 +163,6 @@ p, .body {
   margin-top: 2rem;
   font-size: 1.25rem;
   transition: .3s;
-  width: fit-content;
 }
 
 
@@ -314,7 +313,7 @@ input, select {
   h1 {font-size:5rem; line-height: 6rem;}
   h2 {font-size:4rem; line-height: 5rem;}
   h3 {font-size:3.5rem; line-height: 4.5rem;}
-  h4, .section-about .text-start .text-medium  {font-size:2.25rem; line-height: 3.25rem;}
+  h4, .section-about .text-start .text-medium  {font-size:2rem; line-height: 3rem;}
   h5 {font-size:1.5rem; line-height: 2.5rem;}
   h6 {font-size:1.250rem; line-height: 2.250rem;}
   p, .body, .eyebrow, .button, input, select {font-size: 1rem;}
@@ -343,8 +342,27 @@ input, select {
 
 @media (max-width:700px) {
   h1 {font-size:4rem; line-height: 5rem;}
+  h2 {font-size:2.5rem; line-height: 3.5rem;}
+  h3 {font-size:2rem; line-height: 3rem;}
+  h4, .section-about .text-start .text-medium  {font-size:1.5rem; line-height: 2.5rem;}
+  h5 {font-size:1.25rem; line-height: 2.25rem;}
+  h6 {font-size:1rem; line-height: 2rem;}
+  p, .body, .eyebrow, .button, input, select {font-size: 1rem;}
+  .body-lg {font-size:1.125rem;}
+  .body-sm {font-size:0.875rem;}
+  .nav-item, .nav-item.button {font-size: .875rem;}
 }
 
 @media (max-width:600px) {
   h1 {font-size:3.5rem; line-height: 4.5rem;}
+}
+
+@media (max-width:500px) {
+  h1 {font-size:3rem; line-height: 4rem;}
+  h2 {font-size:2rem; line-height: 3rem;}
+  h3 {font-size:1.875rem; line-height: 1.875rem;}
+}
+
+@media (max-width:400px) {
+  h1 {font-size:2.5rem; line-height: 3.5rem;}
 }

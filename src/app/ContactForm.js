@@ -68,7 +68,7 @@ export default function ContactForm() {
       method="post" 
       className="contact-form" 
       data-fill-error="Please, fill out the contact form." >
-      <div className="form-content contact-fill-blank grid grid-cols-2 gap-4 w-full">
+      <div className="form-content contact-fill-blank grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 w-full">
           <div>
             <input 
               type="text" 
@@ -194,7 +194,7 @@ export default function ContactForm() {
           />
         </div>
       </div>
-      <button className="button" type="submit" disabled={loading}>
+      <button className="button sm:w-auto w-full" type="submit" disabled={loading}>
           {loading ? "Sending..." : "Request Demo"}
         </button>
         {status && <div className="contact-form__response">{status}</div>}
