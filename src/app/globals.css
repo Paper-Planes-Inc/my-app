@@ -1,0 +1,350 @@
+@import "tailwindcss";
+
+:root {
+    --background: #171717;
+    --foreground: #f1f1f1;
+    --green-color:#00FF95;
+    --light-green-color:#B7FFC6;
+    --text-black: #000;
+}
+
+
+
+* {
+  box-sizing: border-box !important;
+  font-size: 16px;
+    /* transition:.3s; */
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: table;
+  width: 100%;
+  height: 100%;
+  line-height: 1.6;
+  position: relative;
+  font-family: sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--background)!important;
+  background: var(--green-color)!important;
+}
+
+::selection {
+  color: var(--background)!important;
+  background: var(--green-color)!important;
+}
+
+
+
+
+hr {
+  border: none;
+  height: 1px;
+  color:#333;
+  background-color:#333;
+}
+
+h1 {
+  font-size: 6.25rem;
+  line-height: 7.25rem;
+  font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 4.375rem;
+  line-height: 5.375rem;
+  font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+  font-weight:700;
+}
+
+h3 {
+  font-size: 3.750rem;
+  line-height: 4.750rem;
+    font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+  font-weight:700;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+  font-weight:700;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 3rem;
+  font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+  font-weight:700;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.body-lg {
+  font-size: 1.5rem;
+}
+
+p, .body {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+
+.body-sm {
+  font-size: 1rem;
+  letter-spacing: .02rem;
+  font-weight: 400;
+}
+
+.body-xs {
+  font-size: .8rem;
+  letter-spacing: .02rem;
+  font-weight: 400;
+}
+
+
+
+.eyebrow {
+  text-transform: uppercase;
+  color: var(--light-green-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+  letter-spacing: .2rem;
+}
+
+
+.logo {
+  width: 220px;
+}
+
+
+.nav-item {
+  padding: 0.8rem 1rem;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color:var(--light-green-color)
+}
+
+.nav-item.button {
+  margin: 0;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+
+.button {
+  background-color: var(--green-color);
+  color: var(--text-black);
+  border-radius: 100rem;
+  padding: .8rem 1.5rem;
+  display: block;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  transition: .3s;
+  width: fit-content;
+}
+
+
+.button:hover {
+  background-color: var(--light-green-color);
+  color: var(--text-black);
+  transition: .3s;
+}
+
+
+
+
+.section-about .text-start {
+  text-align:left;
+  width:100%;
+  transition: none;
+}
+
+.section-about .text-start .text-medium {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+    font-weight:700;
+    vertical-align: middle;
+}
+
+.section-about button {
+  display: inline-flex;
+    transition:.3s;
+}
+
+.section-about button:hover {
+  cursor: pointer;
+  color: var(--light-green-color);
+  transition:.3s;
+}
+
+.section-about button span {
+  font-size: 2rem;
+}
+
+.section-about button span svg {
+  font-size: inherit; 
+}
+
+
+.lines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 100vw;
+  z-index: -1;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 7s 0s infinite;
+          animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1) {
+  margin-left: -25%;
+}
+.line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.line:nth-child(3) {
+  margin-left: 25%;
+}
+.line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+
+.section-features, .section-solution, .section-about {
+  background-color: #000;
+}
+
+.feature-block {
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: 20px;
+}
+
+.icon-block {
+  justify-items: center;
+  background-color: rgba(255, 255, 255, .125);
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  padding: .5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input, select {
+  background-color: var(--foreground);
+  color: var(--text-black);
+  width: 100%;
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+}
+
+
+@media (max-width:1000px) {
+  h1 {font-size:5rem; line-height: 6rem;}
+  h2 {font-size:4rem; line-height: 5rem;}
+  h3 {font-size:3.5rem; line-height: 4.5rem;}
+  h4, .section-about .text-start .text-medium  {font-size:2.25rem; line-height: 3.25rem;}
+  h5 {font-size:1.5rem; line-height: 2.5rem;}
+  h6 {font-size:1.250rem; line-height: 2.250rem;}
+  p, .body, .eyebrow, .button, input, select {font-size: 1rem;}
+  .body-lg {font-size:1.125rem;}
+  .body-sm {font-size:0.875rem;}
+  .nav-item, .nav-item.button {font-size: .875rem;}
+  .logo {width:200px;}
+}
+
+
+
+@media (max-width:800px) {
+  h1 {font-size:4.5rem; line-height: 5.5rem;}
+  h2 {font-size:3rem; line-height: 4rem;}
+  h3 {font-size:2.5rem; line-height: 3.5rem;}
+  h4, .section-about .text-start .text-medium  {font-size:1.875rem; line-height: 2.875rem;}
+  h5 {font-size:1.5rem; line-height: 2.5rem;}
+  h6 {font-size:1rem; line-height: 2rem;}
+  p, .body, .eyebrow, .button, input, select {font-size: 1rem;}
+  .body-lg {font-size:1.125rem;}
+  .body-sm {font-size:0.875rem;}
+  .nav-item, .nav-item.button {font-size: .875rem;}
+  .nav-item {display: none;}
+  .nav-item.button {display: block;}
+}
+
+@media (max-width:700px) {
+  h1 {font-size:4rem; line-height: 5rem;}
+}
+
+@media (max-width:600px) {
+  h1 {font-size:3.5rem; line-height: 4.5rem;}
+}
