@@ -194,9 +194,11 @@ export default function ContactForm() {
           />
         </div>
       </div>
-      <button className="button sm:w-auto w-full" type="submit" disabled={loading}>
-          {loading ? "Sending..." : "Request Demo"}
-        </button>
+
+          <button className="button sm:w-auto w-full" type="submit" disabled={loading}>
+            {loading ? "Sending..." : "Request Demo"}
+          </button>
+ 
         {status && <div className="contact-form__response">{status}</div>}
       {loading && <span className="form-spinner"></span>}
     </form>

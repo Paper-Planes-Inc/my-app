@@ -60,9 +60,11 @@ export default function Home() {
             <a href="#about" className="nav-item">
               About
             </a>
+
             <a href="#contact" className="nav-item button">
               Request demo
             </a>
+
           </div>
         </nav>
 
@@ -87,7 +89,8 @@ export default function Home() {
           >
             <a href="#contact" className="button w-full">Get Free Access</a>
           </motion.div>
-          
+
+     
           <div className="lines">
             <div className="line"></div>
             <div className="line"></div>

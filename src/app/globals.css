@@ -135,6 +135,9 @@ p, .body {
   width: 220px;
 }
 
+nav {
+    z-index:999;
+}
 
 .nav-item {
   padding: 0.8rem 1rem;
@@ -163,6 +166,7 @@ p, .body {
   margin-top: 2rem;
   font-size: 1.25rem;
   transition: .3s;
+  cursor: pointer;
 }
 
 
@@ -173,12 +177,15 @@ p, .body {
 }
 
 
-
+.section-about h2 {
+  padding-bottom: 2rem;
+}
 
 .section-about .text-start {
   text-align:left;
   width:100%;
   transition: none;
+
 }
 
 .section-about .text-start .text-medium {
@@ -282,11 +289,15 @@ p, .body {
   background-color: #000;
 }
 
+
+
 .feature-block {
   padding: 2rem;
   background-color: var(--background);
   border-radius: 20px;
+  transition: .3s;
 }
+
 
 .icon-block {
   justify-items: center;
@@ -306,6 +317,7 @@ input, select {
   padding: .5rem 1rem .5rem 1rem;
   border-radius: 8px;
   font-size: 1.25rem;
+  height: 3rem;
 }
 
 
@@ -338,6 +350,7 @@ input, select {
   .nav-item, .nav-item.button {font-size: .875rem;}
   .nav-item {display: none;}
   .nav-item.button {display: block;}
+  .section-about h2 {padding-bottom: 1rem;}
 }
 
 @media (max-width:700px) {
