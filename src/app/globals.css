@@ -70,8 +70,8 @@ h2 {
 }
 
 h3 {
-  font-size: 3.750rem;
-  line-height: 4.750rem;
+  font-size: 3.50rem;
+  line-height: 4.50rem;
     font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
   font-weight:700;
 }
@@ -169,9 +169,24 @@ nav {
   cursor: pointer;
 }
 
+.button-outline {
+  color: var(--text-black);
+  border-radius: 100rem;
+  padding: .8rem 1.5rem;
+  display: block;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  transition: .3s;
+  cursor: pointer;
+  border: 2px solid #000;
+  width:fit-content;
+}
 
-.button:hover {
-  background-color: var(--light-green-color);
+
+.button:hover, .button-outline:hover {
+  background-color: #fff;
   color: var(--text-black);
   transition: .3s;
 }
@@ -285,11 +300,46 @@ nav {
 }
 
 
-.section-features, .section-solution, .section-about {
+.section-features, .section-solution, .section-about, .section-cta-1, .section-cta-2 {
   background-color: #000;
 }
 
 
+.cta {
+  color: #000;
+  border-radius: 20px;
+  display:flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cta-1 {
+  background-color: #E9F6C3;
+}
+
+.cta-2 {
+  background-color: #B0F4BE;
+}
+
+.cta-img {
+  float:right;
+}
+
+.cta-content {
+  padding: 2rem;
+  float:left;
+}
+
+.cta-img img {
+  float: inline-end;
+  height: 100%;
+  overflow: overlay;
+  border-radius: 20px;
+  position: relative;
+  aspect-ratio: 1 !important;
+  width: fit-content;
+  min-width: 400px;
+}
 
 .feature-block {
   padding: 2rem;
@@ -324,15 +374,16 @@ input, select {
 @media (max-width:1000px) {
   h1 {font-size:5rem; line-height: 6rem;}
   h2 {font-size:4rem; line-height: 5rem;}
-  h3 {font-size:3.5rem; line-height: 4.5rem;}
+  h3 {font-size:3rem; line-height: 4rem;}
   h4, .section-about .text-start .text-medium  {font-size:2rem; line-height: 3rem;}
   h5 {font-size:1.5rem; line-height: 2.5rem;}
   h6 {font-size:1.250rem; line-height: 2.250rem;}
-  p, .body, .eyebrow, .button, input, select {font-size: 1rem;}
+  p, .body, .eyebrow, .button,.button-outline, input, select {font-size: 1rem;}
   .body-lg {font-size:1.125rem;}
   .body-sm {font-size:0.875rem;}
   .nav-item, .nav-item.button {font-size: .875rem;}
   .logo {width:200px;}
+  .cta-img img {min-width: 300px;}
 }
 
 
@@ -344,13 +395,14 @@ input, select {
   h4, .section-about .text-start .text-medium  {font-size:1.875rem; line-height: 2.875rem;}
   h5 {font-size:1.5rem; line-height: 2.5rem;}
   h6 {font-size:1rem; line-height: 2rem;}
-  p, .body, .eyebrow, .button, input, select {font-size: 1rem;}
+  p, .body, .eyebrow, .button,.button-outline, input, select {font-size: 1rem;}
   .body-lg {font-size:1.125rem;}
   .body-sm {font-size:0.875rem;}
   .nav-item, .nav-item.button {font-size: .875rem;}
   .nav-item {display: none;}
   .nav-item.button {display: block;}
   .section-about h2 {padding-bottom: 1rem;}
+    .cta-img img {min-width: 250px;}
 }
 
 @media (max-width:700px) {
@@ -360,22 +412,28 @@ input, select {
   h4, .section-about .text-start .text-medium  {font-size:1.5rem; line-height: 2.5rem;}
   h5 {font-size:1.25rem; line-height: 2.25rem;}
   h6 {font-size:1rem; line-height: 2rem;}
-  p, .body, .eyebrow, .button, input, select {font-size: 1rem;}
+  p, .body, .eyebrow, .button,.button-outline, input, select {font-size: 1rem;}
   .body-lg {font-size:1.125rem;}
   .body-sm {font-size:0.875rem;}
   .nav-item, .nav-item.button {font-size: .875rem;}
+    .cta-img img {min-width: 200px;}
+    .cta-content, .feature-block {padding:1rem;}
 }
 
 @media (max-width:600px) {
-  h1 {font-size:3.5rem; line-height: 4.5rem;}
+  h1 {font-size:3.5rem; line-height: 3.875rem;}
+    .cta-img img {min-width: 150px;}
 }
 
 @media (max-width:500px) {
-  h1 {font-size:3rem; line-height: 4rem;}
-  h2 {font-size:2rem; line-height: 3rem;}
-  h3 {font-size:1.875rem; line-height: 1.875rem;}
+  h1 {font-size:3rem; line-height: 3.125rem;}
+  h2 {font-size:2rem; line-height: 2.125rem;}
+  h3 {font-size:1.875rem; line-height: 2rem;}
+  .cta {display: grid;}
+  .cta-content {z-index:2;}
+  .cta-img {z-index:1;display: inline-block;float: none;margin-top: -20px;}
 }
 
 @media (max-width:400px) {
-  h1 {font-size:2.5rem; line-height: 3.5rem;}
+  h1 {font-size:2.5rem; line-height: 2.875rem;}
 }

@@ -22,6 +22,9 @@ import icon12 from "../../public/icons/Icon=Product_price.svg";
 import icon13 from "../../public/icons/plus-circle.svg";
 import icon14 from "../../public/icons/x-circle-fill.svg";
 
+import img01 from "../../public/img-01.png";
+import img02 from "../../public/img-02.png";
+
 const CloseIcon = () => <Image src={icon13} alt="" width={26} />;
 const OpenIcon = () => <Image src={icon14} alt="" width={26} />;
 
@@ -100,7 +103,7 @@ export default function Home() {
         
 
         <div id="solution" className="section section-solution w-full md:pl-6 md:pr-6 md:pt-40 md:pb-40 pl-4 pr-4 pt-30 pb-20 block justify-items-center text-center">
-          <div className="max-w-2xl ">
+          <div className="max-w-2xl">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -115,8 +118,26 @@ export default function Home() {
           </div>
         </div>
 
+
+        <div className="section section-cta-1 block justify-items-center w-full md:pl-6 md:pr-6 md:pt-20 md:pb-20 pl-4 pr-4 pt-10 pb-10">
+          <div className="cta cta-1 max-w-7xl">
+            <div className="cta-content">
+              <div>
+                  <h3 className={`${roboto_condensed.variable} pt-5 pb-5`}>Data intelligence designed for everyone</h3>
+                  <p>Simplify cannabis retail data with insights anyone can understand and act on.</p>
+                  <a href="#contact" className="button-outline w-full">Get Free Access</a>
+              </div>
+            </div>
+
+            <div className="cta-img">
+              <Image src={img01} alt="" className="" />
+            </div>
+    
+          </div>
+        </div>
+
         <div id="features" className="section section-features w-full md:pl-6 md:pr-6 md:pt-30 md:pb-30 pl-4 pr-4 pt-20 pb-20 block justify-items-center">
-          <div className="max-w-6xl text-align-left w-full md:mb-10 mb-4">
+          <div className="max-w-7xl text-align-left w-full md:mb-10 mb-4">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -129,7 +150,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-6xl">
+          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-7xl">
             
             <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -189,7 +210,7 @@ export default function Home() {
 
 
 
-          <div className="max-w-6xl text-align-left w-full md:mb-10 md:mt-50 mb-4 mt-20">
+          <div className="max-w-7xl text-align-left w-full md:mb-10 md:mt-50 mb-4 mt-20">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -202,7 +223,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-6xl w-full">
+          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-7xl w-full">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -261,7 +282,7 @@ export default function Home() {
 
 
 
-          <div className="max-w-6xl text-align-left  w-full md:mb-10 md:mt-50 mb-4 mt-20">
+          <div className="max-w-7xl text-align-left  w-full md:mb-10 md:mt-50 mb-4 mt-20">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -274,7 +295,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-6xl w-full">
+          <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 max-w-7xl w-full">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -329,13 +350,32 @@ export default function Home() {
             </motion.div>
 
           </div>
-      </div>
+        </div>
+
+        <div className="section section-cta-2 block justify-items-center w-full md:pl-6 md:pr-6 md:pt-20 md:pb-20 pl-4 pr-4 pt-10 pb-10">
+          <div className=" max-w-7xl">
+          <div className="cta cta-2">
+            <div className="cta-content">
+              <div>
+                  <h3 className={`${roboto_condensed.variable} pt-5 pb-5`}>AI solutions built for cannabis retail</h3>
+                  <p>Easily optimize sales, engage customers, and streamline operations.</p>
+                  <a href="#contact" className="button-outline w-full">Get Free Access</a>
+              </div>
+            </div>
+
+            <div className="cta-img">
+              <Image src={img02} alt="" className="" />
+            </div>
+    
+          </div>
+          </div>
+        </div>
 
 
 
 
       <div id="about" className="section section-about w-full md:pl-6 md:pr-6 md:pt-40 md:pb-40 pl-4 pr-4 pt-10 pb-20 block justify-items-center">
-        <div className="max-w-6xl text-align-left w-full md:mb-10 mb-4">
+        <div className="max-w-7xl text-align-left w-full md:mb-10 mb-4">
             <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -355,7 +395,7 @@ export default function Home() {
             viewport={{ once: true, amount: 0.2 }}
             className="w-full  justify-items-center"
             > 
-            <Accordion selectionMode="multiple" className="max-w-6xl text-align-left w-full">
+            <Accordion selectionMode="multiple" className="max-w-7xl text-align-left w-full">
               <AccordionItem key="1" aria-label="What is Paper Planes?" title="What is Paper Planes?" className={`${roboto_condensed.variable}`} indicator={({isOpen}) => (isOpen ? <OpenIcon /> : <CloseIcon />)}>
                 <p className="body-sm mb-10 max-w-4xl">Paper Planes is an AI data intelligence platform for recreational cannabis retailers. Our product transforms cannabis inventory management, increases operational efficiency, maximizes sales opportunities, and improves overall customer engagement.</p>
               </AccordionItem>
@@ -385,7 +425,7 @@ export default function Home() {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.2 }}
             >
-        <div className="max-w-6xl grid md:grid-cols-2 sm:grid-cols-1 gap-12">
+        <div className="max-w-7xl grid md:grid-cols-2 sm:grid-cols-1 gap-12">
           <div>
             <p className={`${roboto_condensed.variable} eyebrow`}>Request a demo</p>
               <h3 className={`${roboto_condensed.variable} pt-5 pb-5`}>Discover the future of cannabis data</h3>
