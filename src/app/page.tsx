@@ -12,7 +12,7 @@ import icon02 from "../../public/icons/Icon=Dollar.svg";
 import icon03 from "../../public/icons/Icon=Shop_bag.svg";
 import icon04 from "../../public/icons/Icon=Bundle.svg";
 import icon05 from "../../public/icons/Icon=Person.svg";
-import icon06 from "../../public/icons/Icon=Person_ID.svg";
+import icon06 from "../../public/icons/Icon=Product.svg";
 import icon07 from "../../public/icons/Icon=Target.svg";
 import icon08 from "../../public/icons/Icon=Marketing.svg";
 import icon09 from "../../public/icons/Icon=Package.svg";
@@ -120,6 +120,14 @@ export default function Home() {
 
 
         <div className="section section-cta-1 block justify-items-center w-full md:pl-6 md:pr-6 md:pt-20 md:pb-20 pl-4 pr-4 pt-10 pb-10">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="justify-items-center"
+          >
+          
           <div className="cta cta-1 max-w-7xl">
             <div className="cta-content">
               <div>
@@ -134,7 +142,10 @@ export default function Home() {
             </div>
     
           </div>
+
+          </motion.div>
         </div>
+
 
         <div id="features" className="section section-features w-full md:pl-6 md:pr-6 md:pt-30 md:pb-30 pl-4 pr-4 pt-20 pb-20 block justify-items-center">
           <div className="max-w-7xl text-align-left w-full md:mb-10 mb-4">
@@ -161,7 +172,7 @@ export default function Home() {
             <div className="feature-block">
               <div className="icon-block"><Image src={icon01} alt={""}/></div>
               <h4 className={`${roboto_condensed.variable}`}>Smart actions</h4>
-              <p className="body-sm">Automate decisions that increase revenue and streamline operations with AI-powered recommendations.</p>
+              <p className="body-sm">Quickly increase revenue and streamline operations with our AI-powered recommendations and smart insights.</p>
             </div>
             </motion.div>
 
@@ -174,7 +185,7 @@ export default function Home() {
             <div className="feature-block">
               <div className="icon-block"><Image src={icon02} alt={""}/></div>
               <h4 className={`${roboto_condensed.variable}`}>Sales strategy</h4>
-              <p className="body-sm">Unlock data-driven insights to optimize pricing, promotions, and inventory performance.</p>
+              <p className="body-sm">Unlock data-driven strategic actions with recommended promotions to optimize inventory performance.</p>
             </div>
             </motion.div>
 
@@ -187,7 +198,7 @@ export default function Home() {
             <div className="feature-block">
               <div className="icon-block"><Image src={icon03} alt={""}/></div>
               <h4 className={`${roboto_condensed.variable}`}>Product bundling</h4>
-              <p className="body-sm">Increase average order value by automatically suggesting high-performing product combinations.</p>
+              <p className="body-sm">Increase your average cart size with our suggested product bundles, featuring high-performing combinations.</p>
             </div>
             </motion.div>
 
@@ -201,7 +212,7 @@ export default function Home() {
             <div className="feature-block">
               <div className="icon-block"><Image src={icon04} alt={""}/></div>
               <h4 className={`${roboto_condensed.variable}`}>Product look-alikes</h4>
-              <p className="body-sm">Identify and recommend similar products to boost customer satisfaction and maximize cross-sell opportunities.</p>
+              <p className="body-sm">Identify and recommend similar products with our recommended look-alikes to maximize cross-sell opportunities.</p>
             </div>
             </motion.div>
 
@@ -233,7 +244,7 @@ export default function Home() {
               <div className="feature-block">
                 <div className="icon-block"><Image src={icon05} alt={""}/></div>
                 <h4 className={`${roboto_condensed.variable}`}>Customer strategy</h4>
-                <p className="body-sm">Leverage AI to better understand customer behavior and create winning loyalty programs.</p>
+                <p className="body-sm">Better understand your consumer behaviors with our data-driven segmentation and sales patterns.</p>
               </div>
             </motion.div>
 
@@ -245,8 +256,8 @@ export default function Home() {
             >
             <div className="feature-block">
               <div className="icon-block"><Image src={icon06} alt={""}/></div>
-              <h4 className={`${roboto_condensed.variable}`}>Customer segments</h4>
-              <p className="body-sm">Easily identify high-value, at-risk, and emerging customer groups to personalize outreach.</p>
+              <h4 className={`${roboto_condensed.variable}`}>Promote products</h4>
+              <p className="body-sm">Quickly identify products with low sales velocity that need promotional marketing and brand education.</p>
             </div>
             </motion.div>
 
@@ -259,7 +270,7 @@ export default function Home() {
             <div className="feature-block">
               <div className="icon-block"><Image src={icon07} alt={""}/></div>
               <h4 className={`${roboto_condensed.variable}`}>Targeting strategy</h4>
-              <p className="body-sm">Design precise campaigns that reach the right audience, with the best products, at the right time.</p>
+              <p className="body-sm">Unlock daily, weekly, & monthly strategic actions based on consumer trends and product sales.</p>
             </div>
             </motion.div>
 
@@ -272,7 +283,7 @@ export default function Home() {
             <div className="feature-block">
               <div className="icon-block"><Image src={icon08} alt={""}/></div>
               <h4 className={`${roboto_condensed.variable}`}>Smart campaigns</h4>
-              <p className="body-sm">Deploy automated marketing campaigns powered by predictive analytics for maximum impact.</p>
+              <p className="body-sm">Easily build product campaigns with suggested promotions, break-even analysis, and AI-driven campaign insights.</p>
             </div>
             </motion.div>
 
@@ -305,7 +316,7 @@ export default function Home() {
               <div className="feature-block">
                 <div className="icon-block"><Image src={icon09} alt={""}/></div>
                 <h4 className={`${roboto_condensed.variable}`}>Predictive ordering</h4>
-                <p className="body-sm">Never miss a sale—predict demand with AI to ensure shelves are always stocked.</p>
+                <p className="body-sm">Understand and meet demand with AI-driven ordering actions to ensure just-in-time product ordering.</p>
               </div>
             </motion.div>
 
@@ -318,7 +329,7 @@ export default function Home() {
               <div className="feature-block">
                 <div className="icon-block"><Image src={icon10} alt={""}/></div>
                 <h4 className={`${roboto_condensed.variable}`}>Inventory management</h4>
-                <p className="body-sm">Track product performance in real time and reduce costly overstock or stockouts.</p>
+                <p className="body-sm">Track inventory performance in real-time and reduce costly overstocking with data-driven callouts.</p>
               </div>
             </motion.div>
 
@@ -330,8 +341,8 @@ export default function Home() {
             >
               <div className="feature-block">
                 <div className="icon-block"><Image src={icon11} alt={""}/></div>
-                <h4 className={`${roboto_condensed.variable}`}>Vendor analysis</h4>
-                <p className="body-sm">Evaluate vendor performance with data-driven scorecards to strengthen supplier relationships.</p>
+                <h4 className={`${roboto_condensed.variable}`}>Brand analysis</h4>
+                <p className="body-sm">Evaluate vendors and brands' performance with data-driven scorecards to optimize product purchasing.</p>
               </div>
             </motion.div>
 
@@ -344,8 +355,8 @@ export default function Home() {
             >
               <div className="feature-block">
                 <div className="icon-block"><Image src={icon12} alt={""}/></div>
-                <h4 className={`${roboto_condensed.variable}`}>Overstock value</h4>
-                <p className="body-sm">Quickly identify and resolve excess inventory and overstock patterns to protect your margins.</p>
+                <h4 className={`${roboto_condensed.variable}`}>Product life analysis</h4>
+                <p className="body-sm">Follow each product's shelf life performance, sales metrics, and consumer purchasing patterns.</p>
               </div>
             </motion.div>
 
@@ -353,6 +364,14 @@ export default function Home() {
         </div>
 
         <div className="section section-cta-2 block justify-items-center w-full md:pl-6 md:pr-6 md:pt-20 md:pb-20 pl-4 pr-4 pt-10 pb-10">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="justify-items-center"
+          >
+
           <div className=" max-w-7xl">
           <div className="cta cta-2">
             <div className="cta-content">
@@ -369,6 +388,8 @@ export default function Home() {
     
           </div>
           </div>
+          </motion.div>
+
         </div>
 
 
