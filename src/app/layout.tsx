@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-
+import Cursor from "@/components/Cursor";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -46,6 +46,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en" className={`${roboto.variable}`}>
       <body>
+        <Cursor />
         {children}
       </body>
     </html>
