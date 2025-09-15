@@ -302,6 +302,14 @@ nav {
 
 .section-features, .section-solution, .section-about, .section-cta-1, .section-cta-2 {
   background-color: #000;
+  --dot-bg: black;
+  --dot-color: rgba(255, 255, 255, 0.2);
+  --dot-size: 1px;
+  --dot-space: 24px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
 }
 
 
