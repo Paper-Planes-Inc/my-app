@@ -15,6 +15,7 @@ export default function Cursor() {
       degrees: number;
       cursorSize: number;
       cursorStyle: any;
+      distance!: number;
 
       constructor() {
         this.root = document.body;
