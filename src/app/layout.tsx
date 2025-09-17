@@ -45,6 +45,9 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   
   return (
     <html lang="en" className={`${roboto.variable}`}>
+      <head>
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#111111" />
+      </head>
       <body>
         <Cursor />
         {children}

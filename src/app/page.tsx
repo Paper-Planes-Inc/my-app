@@ -24,6 +24,8 @@ import icon14 from "../../public/icons/x-circle-fill.svg";
 
 import img01 from "../../public/img-01.png";
 import img02 from "../../public/img-02.png";
+import img03 from "../../public/img-03.png";
+import img04 from "../../public/img-04.png";
 
 const CloseIcon = () => <Image src={icon13} alt="" width={26} />;
 const OpenIcon = () => <Image src={icon14} alt="" width={26} />;
@@ -109,13 +111,49 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.2 }}
-
             >
               <p className={`${roboto_condensed.variable} eyebrow`}>Our solution</p>
               <h2 className={`${roboto_condensed.variable} pt-5 pb-5`}>Turn Data Into Actions</h2>
-              <p className="body">Paper Planes uses AI to transform cannabis retail data into clear, real-time decisions. From boosting sales to streamlining operations, we help dispensaries grow smarter and faster.</p>
+              <p className="body">Paper Planes turns cannabis retail data into real-time, suggested actions and goals. From smart sales strategies to streamlining operations, we help dispensaries grow smarter and faster.</p>
             </motion.div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            >
+          <div className="max-w-7xl grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-4 md:pt-60 md:pb-40 pt-40 pb-20 items-center">
+              <div>
+                <Image src={img03} alt="" className="w-full max-w-lg img" />
+              </div>
+
+              <div className="text-left sm:pt-0 pt-10">
+                <h3 className={`${roboto_condensed.variable}`}>Boost sales with AI-driven smart recommendations</h3>
+                <p>Get more than just reports, our platform delivers recommended strategies and next steps. From pricing to promotions, Paper Planes helps your dispensary make actions instantly and confidently.</p>
+              </div>
+          </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay:.2, duration: 0.2, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            >
+          <div className="max-w-7xl grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-4 md:pt-20 pt-10 items-center">
+              <div className="img-right">
+                <Image src={img04} alt="" className="w-full max-w-lg img" />
+              </div>
+
+              <div className="text-left sm:pt-0 pt-10">
+                <h3 className={`${roboto_condensed.variable}`}>Easily send daily targeted product sales goals</h3>
+                <p>Give your staff the tools to succeed every shift. Send daily goals that highlight top products to focus on, helping employees upsell with confidence, stay aligned, and consistently boost sales performance.</p>
+              </div>
+          </div>
+          </motion.div>
+
         </div>
 
 
@@ -123,7 +161,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
+            transition={{ delay:.2, duration: 0.2, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.2 }}
             className="justify-items-center"
           >

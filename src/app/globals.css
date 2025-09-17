@@ -192,6 +192,16 @@ nav {
   transition: .3s;
 }
 
+.img {
+  border-radius: 20px;
+}
+
+.img-right {
+  order: 1;
+  text-align: right;
+  justify-items: right;
+}
+
 
 .section-about h2 {
   padding-bottom: 2rem;
@@ -410,7 +420,7 @@ input, select {
   .nav-item, .nav-item.button {font-size: .875rem;}
   .nav-item {display: none;}
   .nav-item.button {display: block;}
-  .section-about h2 {padding-bottom: 1rem;}
+  .section-about h2 {padding-bottom: 1rem;padding-top: 1rem;}
     .cta-img img {min-width: 250px;}
 }
 
@@ -427,6 +437,15 @@ input, select {
   .nav-item, .nav-item.button {font-size: .875rem;}
     .cta-img img {min-width: 200px;}
     .cta-content, .feature-block {padding:1rem;}
+}
+
+@media (max-width:639px) {
+  .img-right {
+  order: initial;
+  text-align: left;
+  justify-items: left;
+}
+
 }
 
 @media (max-width:600px) {
