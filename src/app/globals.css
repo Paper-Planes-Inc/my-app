@@ -188,6 +188,30 @@ nav {
   cursor: none;
 }
 
+.button-outline-white {
+    color: var(--foreground);
+  border-radius: 100rem;
+  padding: .8rem 1.5rem;
+  display: block;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  transition: .3s;
+  border: 2px solid #fff;
+  width:fit-content;
+  cursor: none;
+}
+
+.btn-nav-mobile {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.nav-mobile .nav-item.link {
+    padding: .5rem 0rem;
+    font-size: 1rem !important;
+}
 
 .button:hover, .button-outline:hover {
   background-color: #fff;
@@ -508,7 +532,6 @@ input, select {
   .body-lg {font-size:1.125rem;}
   .body-sm {font-size:0.875rem;}
   .nav-item, .nav-item.button {font-size: .875rem;}
-  .nav-item {padding: .8rem .8rem;}
   .nav-item.button {display: block;}
   .section-about h2 {padding-bottom: 1rem;padding-top: 1rem;}
     .cta-img img {min-width: 250px;}

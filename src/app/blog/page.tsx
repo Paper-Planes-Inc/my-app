@@ -29,36 +29,55 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    const [open, setOpen] = useState(false);
+
   return (
     <div className="items-center block h-auto">
       <main className="w-full justify-items-center">
         <nav
-          className={`navbar w-full md:pl-6 md:pr-6 md:pt-4 md:pb-4 pl-4 pr-4 pt-2 pb-2  fixed grid grid-cols-2 transition-colors duration-300 ${
-            scrolled ? "bg-black" : "bg-transparent"
-          }`}
-        >
-          <a href="/">
-            <Image src={logo} alt="" className="logo" />
+      className={`fixed w-full transition-colors duration-300 ${
+        scrolled ? "bg-black" : "bg-transparent"
+      }`}
+    >
+      <div className="grid grid-cols-2 items-center px-4 py-2 md:px-6 md:py-4">
+        {/* Logo */}
+        <a href="/">
+          <Image src={logo} alt="Logo" className="logo" />
+        </a>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex justify-end items-center gap-2">
+          <a href="/features" className="nav-item">Features</a>
+          <a href="/about" className="nav-item">About</a>
+          <a href="/blog" className="nav-item">Blog</a>
+          <a href="/faq" className="nav-item">FAQ</a>
+          <a href="#contact" className="nav-item button">Request demo</a>
+        </div>
+
+        {/* Mobile Hamburger */}
+        <div className="flex justify-end md:hidden">
+          <button onClick={() => setOpen(!open)} className="nav-item button-outline-white btn-nav-mobile" aria-label="Toggle menu" >
+            Menu
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden overflow-hidden nav-mobile transition-all duration-300 ${
+          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="flex flex-col gap-4 px-4 pb-4 bg-black">
+          <a href="/features" className="nav-item link" onClick={() => setOpen(false)}>Features</a>
+          <a href="/about" className="nav-item link" onClick={() => setOpen(false)}>About</a>
+          <a href="/blog" className="nav-item link" onClick={() => setOpen(false)}>Blog</a>
+          <a href="/faq" className="nav-item link" onClick={() => setOpen(false)}>FAQ</a>
+          <a href="#contact" className="nav-item button" onClick={() => setOpen(false)}>
+            Request demo
           </a>
-          <div className="flex justify-end">
-
-            <a href="/features" className="nav-item">
-              Features
-            </a>
-            <a href="/about" className="nav-item">
-              About
-            </a>
-            <a href="/blog" className="nav-item">
-              Blog
-            </a>
-            <a href="/faq" className="nav-item">
-              FAQ
-            </a>
-            <a href="#contact" className="nav-item button">
-              Request demo
-            </a>
-
-          </div>
+        </div>
+      </div>
         </nav>
 
 
