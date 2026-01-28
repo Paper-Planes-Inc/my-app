@@ -14,6 +14,7 @@
   box-sizing: border-box !important;
   font-size: 16px;
     /* transition:.3s; */
+      cursor: none;
 }
 
 html {
@@ -133,7 +134,7 @@ p, .body {
 
 
 .logo {
-  width: 220px;
+  width: 50px;
 }
 
 nav {
@@ -153,6 +154,8 @@ nav {
   margin: 0;
   font-size: 1rem;
   padding: 0.8rem 1rem;
+  min-width: max-content!important;
+  max-width: max-content;
 }
 
 
@@ -192,6 +195,15 @@ nav {
   transition: .3s;
 }
 
+
+.hyperlink {
+  text-decoration: underline;
+}
+
+.hyperlink:hover {
+  color:#B0F4BE!important;
+}
+
 .img {
   border-radius: 20px;
 }
@@ -200,6 +212,84 @@ nav {
   order: 1;
   text-align: right;
   justify-items: right;
+}
+
+.blog-preview {
+  display: inline-block;
+    transition: .3s;
+}
+
+
+.blog-preview:hover .blog-title {
+  color: var(--light-green-color);
+  transition: .3s;
+}
+
+.blog-img {
+    border-radius: 24px;
+    height: 250px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      transition: .3s;
+}
+
+
+.blog-title {
+  line-height: 2rem;
+}
+
+.blog-date {
+  font-size:1rem;
+  opacity: .8;
+}
+
+.blog-detail-date {
+  margin-bottom:2rem;
+}
+
+.blog-detail-date span {
+  opacity: .8;
+  padding-right:10px;
+}
+
+
+
+.contact-form {
+  background-color: var(--foreground);
+    color: var(--text-black);
+    border-radius: 100px;
+    width: 100%;
+    padding: .5rem .5rem;
+    font-size: 1.25rem;
+}
+
+.contact-form .form-content {
+  display: inline-flex;
+}
+
+.contact-form input {
+  background:none;
+  height: auto;
+  border-radius: 100px;
+}
+
+.contact-form input, .contact-form button {
+  display: inline-block;
+}
+
+.contact-form button {
+  margin-top: 0;
+  min-width: max-content;
+  max-width: max-content;
+  border:2px solid #00000020;
+}
+
+.contact-form__response {
+  position: absolute;
+  color:#fff;
+  margin-top:20px;
 }
 
 
@@ -401,7 +491,7 @@ input, select {
   .body-lg {font-size:1.125rem;}
   .body-sm {font-size:0.875rem;}
   .nav-item, .nav-item.button {font-size: .875rem;}
-  .logo {width:200px;}
+
   .cta-img img {min-width: 300px;}
 }
 
@@ -418,7 +508,7 @@ input, select {
   .body-lg {font-size:1.125rem;}
   .body-sm {font-size:0.875rem;}
   .nav-item, .nav-item.button {font-size: .875rem;}
-  .nav-item {display: none;}
+  .nav-item {padding: .8rem .8rem;}
   .nav-item.button {display: block;}
   .section-about h2 {padding-bottom: 1rem;padding-top: 1rem;}
     .cta-img img {min-width: 250px;}

@@ -6,9 +6,9 @@ import nodemailer from "nodemailer";
 export async function POST(req) {
   try {
     // Parse request body
-    const { name, email, company, state, stores, phone } = await req.json();
+    const { email } = await req.json();
 
-    if (!name || !email || !company) {
+    if ( !email ) {
       return NextResponse.json({ message: "All fields are required" }, { status: 400 });
     }
 
@@ -25,15 +25,8 @@ export async function POST(req) {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_RECEIVER, // set this in .env.local
-      subject: `New Contact Form Submission from ${name}`,
-      text: `
-        Name: ${name}
-        Company: ${company}
-        State: ${state || "N/A"}
-        Stores: ${stores || "N/A"}
-        Email: ${email}
-        Phone: ${phone || "N/A"}
-      `,
+      subject: `New Contact Form Submission from ${email}`,
+      text: `You recieved interest on the Paper Planes website from ${email}.`,
     };
 
     // Send email

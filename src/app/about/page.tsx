@@ -4,19 +4,14 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import ContactForm from "@/app/ContactForm";
-import { Accordion, AccordionItem } from "@heroui/accordion";
 
-import logo from "../../public/Logo_Nav.png";
-import icon13 from "../../public/icons/plus-circle.svg";
-import icon14 from "../../public/icons/x-circle-fill.svg";
+import logo from "../../../public/Logo_Nav.png";
 
-import img01 from "../../public/img-01.png";
+import img01 from "../../../public/img-01.png";
 
-import img03 from "../../public/img-03.png";
-import img04 from "../../public/img-04.png";
+import img05 from "../../../public/img-05.png";
+import img06 from "../../../public/img-06.png";
 
-const CloseIcon = () => <Image src={icon13} alt="" width={26} />;
-const OpenIcon = () => <Image src={icon14} alt="" width={26} />;
 
 const roboto_condensed = Roboto_Condensed({
   variable: "--font-roboto-condensed",
@@ -72,21 +67,11 @@ export default function Home() {
             viewport={{ once: true, amount: 0.2 }}
             className="text-center  justify-items-center"
           >
-            <h1 className={`${roboto_condensed.variable}`}>The Next Generation AI-Driven Cannabis Data Platform</h1>
-            <p className="body w-full max-w-2xl">Paper Planes is the AI platform that revolutionizes dispensary operations with inclusive cannabis data intelligence.</p>
+            <h1 className={`${roboto_condensed.variable}`}>About Paper Planes</h1>
+            <p className="body w-full max-w-2xl">Building the future of cannabis data</p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{delay: .5, duration: 0.2, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="text-center  justify-items-center sm:w-auto w-full"
-          >
-            <a href="#contact" className="button w-full">Get Free Access</a>
-          </motion.div>
-
-     
+      
           <div className="lines">
             <div className="line"></div>
             <div className="line"></div>
@@ -103,9 +88,9 @@ export default function Home() {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.2 }}
             >
-              <p className={`${roboto_condensed.variable} eyebrow`}>Our solution</p>
-              <h2 className={`${roboto_condensed.variable} pt-5 pb-5`}>Turn Data Into Actions</h2>
-              <p className="body">Paper Planes turns cannabis retail data into real-time, suggested actions and goals. From smart sales strategies to streamlining operations, we help dispensaries grow smarter and faster.</p>
+              <p className={`${roboto_condensed.variable} eyebrow`}>Our mission</p>
+              <h2 className={`${roboto_condensed.variable} pt-5 pb-5`}>Humanize cannabis in data and life</h2>
+              <p className="body">We recognize that behind each data point lie real people with diverse experiences. Our approach is grounded in empathy and a deep understanding of all cannabis users, designed to transform dispensary operations.</p>
             </motion.div>
           </div>
 
@@ -117,12 +102,13 @@ export default function Home() {
             >
           <div className="max-w-7xl grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-4 md:pt-60 md:pb-40 pt-40 pb-20 items-center">
               <div>
-                <Image src={img03} alt="" className="w-full max-w-lg img" />
+                <Image src={img05} alt="" className="w-full max-w-lg img" />
               </div>
 
               <div className="text-left sm:pt-0 pt-10">
-                <h3 className={`${roboto_condensed.variable}`}>Boost sales with AI-driven smart recommendations</h3>
-                <p>Get more than just reports, our platform delivers recommended strategies and next steps. From pricing to promotions, Paper Planes helps your dispensary make actions instantly and confidently.</p>
+                <h3 className={`${roboto_condensed.variable}`}>Why we created Paper Planes</h3>
+                <p>Our founders set out to bring AI and machine learning into everyday retail operations, helping stores understand their customers, optimize inventory, and make smarter decisions.</p>
+                <p className="mt-4">Paper Planes turns data into action. Rather than generating hundreds of reports that need manual analysis, our platform analyzes everything in real time and recommends the next best actions and strategies.</p>
               </div>
           </div>
           </motion.div>
@@ -135,46 +121,18 @@ export default function Home() {
             >
           <div className="max-w-7xl grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-4 md:pt-20 pt-10 items-center">
               <div className="img-right">
-                <Image src={img04} alt="" className="w-full max-w-lg img" />
+                <Image src={img06} alt="" className="w-full max-w-lg img" />
               </div>
 
               <div className="text-left sm:pt-0 pt-10">
-                <h3 className={`${roboto_condensed.variable}`}>Easily send daily targeted product sales goals</h3>
-                <p>Give your staff the tools to succeed every shift. Send daily goals that highlight top products to focus on, helping employees upsell with confidence, stay aligned, and consistently boost sales performance.</p>
+                <h3 className={`${roboto_condensed.variable}`}>How data drives the future of cannabis</h3>
+                <p>The cannabis industry generates enormous amounts of data but much of it is incomplete, inaccurate, or scattered across systems that don’t communicate.</p>
+                <p className="mt-4">Paper Planes AI brings that data together and transforms it into actionable insight. Instead of only reviewing what already happened, our platform identifies patterns, catches potential issues early, and enables better, faster decision-making.</p>
               </div>
           </div>
           </motion.div>
 
         </div>
-
-
-        <div className="section section-cta-1 block justify-items-center w-full md:pl-6 md:pr-6 md:pt-20 md:pb-20 pl-4 pr-4 pt-10 pb-10">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay:.2, duration: 0.2, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="justify-items-center"
-          >
-          
-          <div className="cta cta-1 max-w-7xl">
-            <div className="cta-content">
-              <div>
-                  <h3 className={`${roboto_condensed.variable} pt-5 pb-5`}>Data intelligence designed for everyone</h3>
-                  <p>Simplify cannabis retail data with insights anyone can understand and act on.</p>
-                  <a href="#contact" className="button-outline w-full">Get Free Access</a>
-              </div>
-            </div>
-
-            <div className="cta-img">
-              <Image src={img01} alt="" className="" />
-            </div>
-    
-          </div>
-
-          </motion.div>
-        </div>
-
 
 
 
