@@ -9,7 +9,7 @@ import logo from "../../../public/Logo_Nav.png";
 import icon13 from "../../../public/icons/plus-circle.svg";
 import icon14 from "../../../public/icons/x-circle-fill.svg";
 
-import img01 from "../../../public/img-brand.png";
+import img01 from "../../../public/paper-planes-img-brand.png";
 
 
 const CloseIcon = () => <Image src={icon13} alt="" width={26} />;

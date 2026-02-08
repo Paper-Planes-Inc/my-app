@@ -60,7 +60,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
               "@type": "Organization",
               name: "Paper Planes",
               url: "https://paperplanesapp.com/",
-              logo: "https://paperplanesapp.com/assets/Paper-Planes-Logo.png",
+              logo: "https://paperplanesapp.com/assets/paper-planes-logo.png",
             }),
           }}
         />
