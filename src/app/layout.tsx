@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Cursor from "@/components/Cursor";
 
@@ -48,6 +49,21 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
     <html lang="en" className={`${roboto.variable}`}>
       <head>
         <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#111111" />
+
+        <Script
+          id="organization-structured-data"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Paper Planes",
+              url: "https://paperplanesapp.com/",
+              logo: "https://paperplanesapp.com/assets/Paper-Planes-Logo.png",
+            }),
+          }}
+        />
       </head>
       <body>
         <Cursor />

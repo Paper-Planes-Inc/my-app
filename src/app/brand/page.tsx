@@ -115,7 +115,8 @@ export default function Home() {
               <div className="text-left sm:pt-0 pt-10">
                 <h3 className={`${roboto_condensed.variable}`}>Paper Planes Logo</h3>
                 <p>Find our logo assets below. Please do not alter the original files with filters or effects.</p>
-                <a href="#" className="button w-max">Get Logo Assets</a>
+                <a href="/assets/paper-planes-logo-assets.zip" className="button w-max" download>Get Logo Assets</a>
+                
               </div>
           </div>
           </motion.div>
