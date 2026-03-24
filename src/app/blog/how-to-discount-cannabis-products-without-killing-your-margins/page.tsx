@@ -9,7 +9,7 @@ import logo from "../../../../public/Logo_Nav.png";
 import icon13 from "../../../../public/icons/plus-circle.svg";
 import icon14 from "../../../../public/icons/x-circle-fill.svg";
 
-import img01 from "../../../../public/blog/img-01.jpg";
+import img03 from "../../../../public/blog/img-03.jpg";
 
 
 const CloseIcon = () => <Image src={icon13} alt="" width={26} />;
@@ -95,68 +95,69 @@ export default function Home() {
             > 
 
           <div className="max-w-4xl text-align-left w-full md:mb-10 mb-4">
-            <h3 className={`${roboto_condensed.variable} pt-5 pb-5 blog-detail-title`}>How AI is transforming the cannabis industry & why dispensaries can’t afford to ignore it</h3>
-              <p className="body blog-detail-date"><span>By Paper Planes</span> <span> • </span> <span>January 25, 2026</span> <span> • </span> <span>Company</span> <span> • </span> <span>Technology</span> </p>
-              <Image src={img01} alt="" className="w-full img blog-detail-image" />
+            <h3 className={`${roboto_condensed.variable} pt-5 pb-5 blog-detail-title`}>How to discount cannabis products without killing your margins</h3>
+              <p className="body blog-detail-date"><span>By Paper Planes</span> <span> • </span> <span>March 27, 2026</span> <span> • </span> <span>Company</span> <span> • </span> <span>Technology</span> </p>
+              <Image src={img03} alt="" className="w-full img blog-detail-image" />
           </div>
 
 
         </motion.div>
 
           <div className="max-w-4xl text-align-left w-full md:mb-10 mb-4">
-            <p>The cannabis industry is more competitive and dynamic than ever. While consumer demand continues to grow across legal markets, dispensaries and brands face intense pressures: rising competition, tight margins, and the constant challenge of keeping inventory aligned with real customer demand. In a landscape like this, Artificial Intelligence (AI) isn’t just a buzzword — it’s becoming the strategic advantage that separates thriving operators from struggling ones.</p>
-            <p className="mt-6">At Paper Planes, we believe AI will play a defining role in shaping the future of cannabis retail. Here’s how smart technology is revolutionizing the industry — and why dispensaries should act now to harness its power.</p>
+            <p>Discounting is one of the most powerful—and most misused—tools in cannabis retail.</p>
+            <p className="mt-6">Run the right promotion, and you increase traffic, move inventory, and boost revenue. Run the wrong one, and you destroy margin, train customers to wait for deals, and hurt long-term profitability.</p>
+            <p className="mt-6">So how do you actually decide:</p>
+            <ul className="list-disc list-outside ml-10 mt-6">
+                <li className="body">Which cannabis products to discount?</li>
+                <li className="body">How deep should the discount be?</li>
+              </ul>
 
             <hr className="mt-10 mb-10"></hr>
 
-            <h4 className={`${roboto_condensed.variable}`}>AI: From Nice-to-Have to Business Essential</h4>
-            <p>In mainstream retail, AI is already well-established — from dynamic pricing tools to predictive analytics that drive inventory decisions. Cannabis operators can look to these proven models and tailor them to the unique challenges of regulated retail environments.</p>
-            <p className="mt-6">But cannabis isn’t mainstream retail — regulations, compliance, and product diversity make it a high-complexity industry. That’s where purpose-built cannabis AI makes all the difference.</p>
+            <h4 className={`${roboto_condensed.variable}`}>Why Discounting Is So Tricky in Cannabis</h4>
+            <p>Cannabis retail has unique challenges:</p>
+            <ul className="list-disc list-outside ml-10 mt-6">
+                <li className="body">Products lose value over time (freshness, trends, competition)</li>
+                <li className="body">Pricing varies widely across categories</li>
+                <li className="body">Customers are highly promotion-sensitive</li>
+              </ul>
+            <p className="mt-6">That means every discount has a tradeoff: You’re exchanging margin for volume.</p>
+            <p className="mt-6">The goal isn’t just to sell more—it’s to sell smarter.</p>
    
             <hr className="mt-10 mb-10"></hr>
 
-            <h4 className={`${roboto_condensed.variable}`}>Smarter Inventory Means Happier Customers (and Better Margins)</h4>
-            <p>One of the biggest pain points dispensaries face is inventory management: too much stock ties up capital and increases waste; too little results in stockouts and unhappy customers. The right AI tools can:</p>
+            <h4 className={`${roboto_condensed.variable}`}>What Products Should You Discount?</h4>
+            <p>Not every product should be discounted—focus on the ones where it actually drives value.</p>
               
               <ul className="list-disc list-outside ml-10 mt-6">
-                <li className="body">Analyze historical sales patterns and forecast future demand with high precision.</li>
-                <li className="body">Reduce stockouts and overstocks by accurately predicting what products customers will want — and when.</li>
-                <li className="body">Automate reorder timing based on real-time data, freeing teams from manual guesswork and reducing costly human error.</li>
+                <li className="body">Aging inventory: Move products before they lose more value and require deeper markdowns.</li>
+                <li className="body">Overstocked SKUs: Prioritize selling through excess inventory to free up cash.</li>
+                <li className="body">Low-velocity items: Give slow movers a push with targeted discounts or bundles.</li>
+                <li className="body">Competitive categories: Use strategic pricing on price-sensitive items like flower or vapes to drive traffic—but protect your margins.</li>
               </ul>
-            <p className="mt-6">For example, AI-powered analytics can cut inventory shrink and inefficiency dramatically — keeping shelves stocked with what sells and reducing capital tied up in slow-moving SKUs. With AI forecasting, even small dispensaries can manage inventory like Fortune 500 retailers — but tailored to cannabis realities.</p>
+            <p className="mt-6">The goal isn’t to discount everything—it’s to discount intentionally.</p>
    
 
             <hr className="mt-10 mb-10"></hr>
 
-            <h4 className={`${roboto_condensed.variable}`}>Boost Sales With Data-Driven Insights</h4>
-            <p>AI isn’t just about numbers — it’s about turning those numbers into action. Machine learning models can detect patterns in customer purchase behavior and:</p>
+            <h4 className={`${roboto_condensed.variable}`}>How Much Should You Discount?</h4>
+            <p>Every discount has a breakeven point. If you lower your price, you need to sell more units to make up for lost margin. For example:</p>
               
               <ul className="list-disc list-outside ml-10 mt-6">
-                <li className="body">Identify high-value products and recommend pricing strategies based on demand trends.</li>
-                <li className="body">Segment customers for targeted promotions and personalized offers.</li>
-                <li className="body">Optimize product placement and merchandising based on what drives repeat sales.</li>
+                <li className="body">A small discount might increase conversions without hurting profit</li>
+                <li className="body">A large discount might require significantly more volume to break even</li>
               </ul>
-            <p className="mt-6">This level of intelligence helps dispensaries get ahead of trends, move inventory faster, and build customer loyalty — all of which directly impact the bottom line.</p>
+            <p className="mt-6">Without understanding this relationship, you’re flying blind.</p>
 
 
             <hr className="mt-10 mb-10"></hr>
 
-            <h4 className={`${roboto_condensed.variable}`}>Paper Planes: AI Built for Cannabis Success</h4>
-            <p>At Paper Planes, we’re committed to empowering cannabis retailers with AI that’s both intelligent and practical. Our platform helps dispensaries:</p>
-              
-              <ul className="list-disc list-outside ml-10 mt-6">
-                <li className="body">Optimize inventory and reduce waste with predictive demand models</li>
-                <li className="body">Increase sales by uncovering actionable customer and product insights</li>
-                <li className="body">Automate key operational workflows, freeing teams to do more with less</li>
-                <li className="body">Make smarter decisions faster, with real-time AI analytics tailored to cannabis retail</li>
-              </ul>
-            <p className="mt-6">Whether you’re a boutique dispensary or a multi-location brand, AI should be part of your growth strategy — not just an experiment.</p>
-
-
-   
+            <h4 className={`${roboto_condensed.variable}`}>Discount Smarter with Paper Planes</h4>
+            <p>Paper Planes removes the guesswork from discounting with its Discount Now tool, giving you clear, data-backed answers instead of gut decisions.</p>
+            <p className="mt-6">Before you run a promotion, it shows your breakeven point—how much additional volume you need at each discount level and whether it will actually increase revenue. It also uses your historical data to predict customer demand, so you can see how shoppers are likely to respond at different price points.</p>
+            <p className="mt-6">On top of that, it helps you focus on the right products at the right time, highlighting which items need to move and where a discount will actually improve sell-through—without unnecessarily cutting into margins.</p>
+            <p className="mt-6">In short, you’re not just discounting—you’re making informed, profitable decisions.</p>
           </div>
-
-        
       </div>
 
 

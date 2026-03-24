@@ -5,13 +5,11 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import ContactForm from "@/app/ContactForm";
 
-import logo from "../../../public/Logo_Nav.png";
-import icon13 from "../../../public/icons/plus-circle.svg";
-import icon14 from "../../../public/icons/x-circle-fill.svg";
+import logo from "../../../../public/Logo_Nav.png";
+import icon13 from "../../../../public/icons/plus-circle.svg";
+import icon14 from "../../../../public/icons/x-circle-fill.svg";
 
-import img01 from "../../../public/blog/img-01.jpg";
-import img02 from "../../../public/blog/img-02.jpg";
-import img03 from "../../../public/blog/img-03.jpg";
+import img02 from "../../../../public/blog/img-02.jpg";
 
 
 const CloseIcon = () => <Image src={icon13} alt="" width={26} />;
@@ -87,19 +85,7 @@ export default function Home() {
 
 
       <div id="about" className="section section-about w-full md:pl-6 md:pr-6 md:pt-40 md:pb-40 pl-4 pr-4 pt-20 pb-20 block justify-items-center">
-        <div className="max-w-7xl text-align-left w-full md:mb-10 mb-4">
-            <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.2 }}
-            >
-
-              <h1 className={`${roboto_condensed.variable} pt-5 pb-5`}>Paper Planes Blog</h1>
-              <p className="body">Stay up-to-date on everything Paper Planes.</p>
-            </motion.div>
-          </div>
-
+        
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -108,60 +94,53 @@ export default function Home() {
             className="w-full  justify-items-center"
             > 
 
-          <div className="max-w-7xl text-align-left w-full md:mb-10 mb-4">
-            <div className="lg:columns-3 md:columns-3 sm:columns-2 xs:columns-2 gap-8">
+          <div className="max-w-4xl text-align-left w-full md:mb-10 mb-4">
+            <h3 className={`${roboto_condensed.variable} pt-5 pb-5 blog-detail-title`}>Daily sales goals for dispensaries: the key to consistent cannabis retail growth</h3>
+              <p className="body blog-detail-date"><span>By Paper Planes</span> <span> • </span> <span>February 22, 2026</span> <span> • </span> <span>Company</span> <span> • </span> <span>Technology</span> </p>
+              <Image src={img02} alt="" className="w-full img blog-detail-image" />
+          </div>
+
+
+        </motion.div>
+
+          <div className="max-w-4xl text-align-left w-full md:mb-10 mb-4">
+            <p>In cannabis retail, success isn’t just about having great products or a prime location—it’s about execution, every single day. While many dispensaries focus on monthly revenue targets or big promotional spikes like 4/20, the operators who consistently win are the ones obsessed with daily sales goals.</p>
+            <p className="mt-6">And there’s a reason for that: cannabis retail is a daily operations game.</p>
+
+            <hr className="mt-10 mb-10"></hr>
+
+            <h4 className={`${roboto_condensed.variable}`}>Why Daily Sales Goals Matter (Especially in Cannabis)</h4>
+            <p>Daily sales goals keep your dispensary focused on what matters today. In a fast-moving retail environment where demand shifts and products lose value over time, monthly targets alone aren’t enough.</p>
+            <p className="mt-6">They help your team stay aligned, catch slow days before they add up, and make smarter decisions in real time. Budtenders know what to sell, managers can adjust on the fly, and owners stay connected to actual performance.</p>
+            <p className="mt-6">Just as importantly, daily goals improve inventory movement—pushing high-margin products, clearing aging stock, and avoiding missed opportunities.</p>
+            <p className="mt-6">In short, daily sales goals turn data into action—and action into revenue.</p>
+   
+            <hr className="mt-10 mb-10"></hr>
+
+            <h4 className={`${roboto_condensed.variable}`}>The Problem: Daily Sales Goals Are Hard to Calculate</h4>
+            <p>Most dispensaries don’t struggle with setting daily goals—they struggle with figuring out how to set them. Common issues:</p>
               
-              <div>
-              <a href="/blog/how-to-discount-cannabis-products-without-killing-your-margins" className="blog-preview mb-10">
-                  <div
-                      className="blog-img mb-4"
-                      style={{
-                        backgroundImage: `url(${img03.src})`,
-                      }}
-                    >
-                    </div>
-                  <h5 className="blog-title">How to discount cannabis products without killing your margins</h5>
-                  <p className="blog-date">March 27, 2026</p>
-              </a>
-              </div>
+              <ul className="list-disc list-outside ml-10 mt-6">
+                <li className="body">Relying on static monthly targets</li>
+                <li className="body">Ignoring day-of-week trends</li>
+                <li className="body">Not accounting for seasonality or events</li>
+                <li className="body">Spending hours in spreadsheets</li>
+              </ul>
+            <p className="mt-6">This is where most analytics tools stop short.</p>
+   
+
+            <hr className="mt-10 mb-10"></hr>
 
 
-              <div>
-              <a href="/blog/daily-sales-goals-for-dispensaries-the-key-to-consistent-cannabis-retail-growth" className="blog-preview mb-10">
-                  <div
-                      className="blog-img mb-4"
-                      style={{
-                        backgroundImage: `url(${img02.src})`,
-                      }}
-                    >
-                    </div>
-                  <h5 className="blog-title">Daily sales goals for dispensaries: the key to consistent cannabis retail growth</h5>
-                  <p className="blog-date">February 22, 2026</p>
-              </a>
-              </div>
-
-            
-
-              <div>
-              <a href="/blog/how-AI-is-transforming-the-cannabis-industry" className="blog-preview mb-10">
-                  <div
-                      className="blog-img mb-4"
-                      style={{
-                        backgroundImage: `url(${img01.src})`,
-                      }}
-                    >
-                    </div>
-                  <h5 className="blog-title">How AI is transforming the cannabis industry & why dispensaries can’t afford to ignore it</h5>
-                  <p className="blog-date">January 25, 2026</p>
-              </a>
-              </div>
-              
-
-            </div>
+            <h4 className={`${roboto_condensed.variable}`}>Paper Planes: Daily Sales Goals, Automated</h4>
+            <p>Paper Planes takes the guesswork out of daily sales goals by using your historical data to generate a dynamic target that actually reflects how your store performs. Instead of relying on static numbers, it analyzes trends like day-of-week performance and seasonality to deliver a goal that’s realistic and achievable.</p>
+            <p className="mt-6">But it doesn’t stop at the number. Paper Planes tells you how to hit it—surfacing the top products to sell right now, highlighting high-margin SKUs, and identifying inventory that needs to move.</p>
+            <p className="mt-6">To keep your team aligned, it also sends daily standup emails with your sales goal, key product focus, and clear priorities for the day.</p>
+            <p className="mt-6">No spreadsheets. No guessing. Just clear, data-driven direction every single day.</p>
 
           </div>
 
-        </motion.div>
+        
       </div>
 
 
