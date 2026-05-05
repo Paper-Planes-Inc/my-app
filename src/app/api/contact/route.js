@@ -1,40 +1,42 @@
-"use server";
+export const runtime = "nodejs";
 
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    // Parse request body
-    const { email } = await req.json();
+    const body = await req.json();
 
-    if ( !email ) {
-      return NextResponse.json({ message: "All fields are required" }, { status: 400 });
+    if (!body?.email) {
+      return NextResponse.json({ message: "Email required" }, { status: 400 });
     }
 
-    // Nodemailer transporter setup
+    console.log("ENV CHECK:", {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS ? "exists" : "missing",
+      receiver: process.env.EMAIL_RECEIVER,
+    });
+
     const transporter = nodemailer.createTransport({
-      service: "gmail", // or configure SMTP
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
-        user: process.env.EMAIL_USER, // must exist in .env.local
-        pass: process.env.EMAIL_PASS, // app password or SMTP password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
-    // Email details
-    const mailOptions = {
+    await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_RECEIVER, // set this in .env.local
-      subject: `New Contact Form Submission from ${email}`,
-      text: `You recieved interest on the Paper Planes website from ${email}.`,
-    };
+      to: process.env.EMAIL_RECEIVER,
+      subject: `New Contact Form Submission from ${body.email}`,
+      text: `You received interest from ${body.email}`,
+    });
 
-    // Send email
-    await transporter.sendMail(mailOptions);
-
-    return NextResponse.json({ message: "Email sent successfully!" }, { status: 200 });
+    return NextResponse.json({ message: "Email sent!" });
   } catch (error) {
-    console.error("Email sending error:", error);
+    console.error("FULL ERROR:", error);
     return NextResponse.json({ message: "Error sending email" }, { status: 500 });
   }
 }
