@@ -13,6 +13,8 @@ import img01 from "../../../public/blog/img-01.jpg";
 import img02 from "../../../public/blog/img-02.jpg";
 import img03 from "../../../public/blog/img-03.jpg";
 import img04 from "../../../public/blog/img-04.jpg";
+import img05 from "../../../public/blog/img-05.jpg";
+import img06 from "../../../public/blog/img-06.jpg";
 
 
 const CloseIcon = () => <Image src={icon13} alt="" width={26} />;
@@ -111,6 +113,34 @@ export default function Home() {
 
           <div className="max-w-7xl text-align-left w-full md:mb-10 mb-4">
             <div className="gap-8 grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2">
+
+              <div>
+              <a href="/blog/a-dispensarys-guide-to-customer-segmentation-and-targeted-marketing" className="blog-preview mb-10">
+                  <div
+                      className="blog-img mb-4"
+                      style={{
+                        backgroundImage: `url(${img06.src})`,
+                      }}
+                    >
+                    </div>
+                  <h5 className="blog-title">A dispensary’s guide to customer segmentation and targeted marketing</h5>
+                  <p className="blog-date">June 28, 2026</p>
+              </a>
+              </div>
+
+              <div>
+              <a href="/blog/how-AI-reinvents-cannabis-retail-analytics-and-better-decision-making" className="blog-preview mb-10">
+                  <div
+                      className="blog-img mb-4"
+                      style={{
+                        backgroundImage: `url(${img05.src})`,
+                      }}
+                    >
+                    </div>
+                  <h5 className="blog-title">How AI reinvents cannabis retail analytics and better decision-making</h5>
+                  <p className="blog-date">May 24, 2026</p>
+              </a>
+              </div>
 
               <div>
               <a href="/blog/how-to-optimize-cannabis-inventory-management-with-smart-ordering" className="blog-preview mb-10">
